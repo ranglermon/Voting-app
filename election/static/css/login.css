@@ -1,0 +1,14 @@
+div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 5px;
+  background-color: #cbd8ed;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+
+}

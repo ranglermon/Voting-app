@@ -1,0 +1,25 @@
+{% extends 'election/base.html' %}
+{% load static %}
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+      {% endblock %}
+
+{% block content %}
+
+<div>
+  <ul class="top_bar">
+    <li><a href ="./create_election">Create New Election</a></li>
+    <li>Makkaflow</li>
+  </ul>
+</div>
+
+<div class="my_elections">
+  <h2> My active elections</h2>
+  {% for election in elections %}
+    <div class="election">
+    <a href="./create_election/{{election.Election_ID}}">{{election.Name}}</a>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

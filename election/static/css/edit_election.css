@@ -1,0 +1,20 @@
+.box {
+width: 70%;
+margin: 0 auto;
+background-color: #dee3ea;
+padding: 20px;
+}
+
+.election_settings {
+
+}
+
+.election_settings label {
+ font-size: 15px;
+ display: block;
+}
+
+.formset input {
+  display: inline;
+  margin: 10 10;
+  }

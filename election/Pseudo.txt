@@ -1,0 +1,7 @@
+Bruker Modeller Election og Alternative
+	Alternative, fungerer både som alternativ  og selve stemmen samtidig.
+
+1 lage Create User side
+2 Lage create election side
+3 Lage avstemnignsmetodetingaktig
+

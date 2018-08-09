@@ -1,0 +1,17 @@
+{% extends 'election/base.html' %}
+{% load static %}
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+      {% endblock %}
+
+{% block content %}
+<h1>Login at voteapp</h1>
+  <div>
+    <form method="post">
+      {% csrf_token %}
+      {{form.as_p}}
+    <button type="submit">Sign up</button>
+  </form>
+  </div>
+
+{% endblock %}

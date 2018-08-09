@@ -1,0 +1,30 @@
+{% extends 'election/base.html' %}
+{% load static %}
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/edit_election.css' %}">
+<title>Jeg er smart</title>
+{% endblock %}
+{% block content %}
+<div class="box">
+
+<form method="post">
+   {% csrf_token %}
+   {{add_form}}
+     <input type="hidden" name="form_id" value="add_alt">
+    <button type="submit">Save Election</button>
+</form>
+
+<form method="post">
+      {% csrf_token %}
+
+      <div class="election_settings">{{form.as_p}}</div>
+
+      <div class="formset">{{formset}}</div>
+  <input type="hidden" name="form_id" value="save">
+    <button type="submit">Save Election</button>
+
+
+</div>
+</form>
+
+{% endblock %}

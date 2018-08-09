@@ -1,0 +1,28 @@
+{% extends 'election/base.html' %}
+{% load static %}
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/create_user.css' %}">
+      {% endblock %}
+
+{% block content %}
+<h1>Register at Voteapp</h1>
+  <div id="login">
+    <form method="post">
+     <form>
+    {% csrf_token %}
+
+
+ {% for field in form %}
+          <div id={{ field.label }}>
+              <label id={{ field.label }}>{{ field.label }}</label>
+              {{ field }}
+          </div>
+      {% endfor %}
+           <button type="submit">Sign up</button>
+    </form>
+
+  </form>
+</div>
+
+
+{% endblock %}
